@@ -66,8 +66,43 @@ git remote -v
 git push -u origin main
 ```
 
+## Publishing as a GitHub Page
+
+To publish your Vibe Todo app as a live GitHub Page (accessible via a public URL), follow these steps:
+
+#### Step 1: Enable GitHub Pages in Your Repository
+
+1. Go to your GitHub repository: https://github.com/katariinabiahun/w2w-vibe-coding
+2. Click on **Settings** (in the top navigation)
+3. In the left sidebar, scroll down and click on **Pages**
+4. Under "Source", select **Deploy from a branch**
+5. Select the branch: **main**
+6. Select the folder: **/ (root)**
+7. Click **Save**
+
+#### Step 2: Wait for Deployment
+
+GitHub will automatically build and deploy your site. You should see a message like:
+
+```
+Your site is published at: https://katariinabiahun.github.io/w2w-vibe-coding/
+```
+
+This typically takes 1-2 minutes.
+
+#### Step 3: Access Your Live App
+
+Once deployed, your Vibe Todo app will be live at:
+```
+https://katariinabiahun.github.io/w2w-vibe-coding/
+```
+
+You can share this link with anyone, and they can use your todo app without needing to run a local server!
+
 ### Notes
 - The app is intentionally dependency-free and uses modern browser features.
 - Colors are set in `styles.css` using CSS variables (see `--tomato` and `--blue`).
+- GitHub Pages automatically serves your `index.html` as the home page.
+- Any changes you push to the `main` branch will automatically update your live page within 1-2 minutes.
 
-Enjoy — tweak the colors in `styles.css` to match your vibe.
+Enjoy — tweak the colors in `styles.css` to match your vibe!
